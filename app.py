@@ -2,7 +2,7 @@ import openai
 import time
 import streamlit as st
 
-openai.api_key = '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'
+openai.api_key = 'sk-...'
 
 def main():
 
@@ -14,7 +14,7 @@ def main():
         st.session_state.client = openai.OpenAI()
 
         # Use your existing Assistant ID
-        st.session_state.assistant_id = "asst_WOBuKDXGBSNpKuQUpi78fhON"
+        st.session_state.assistant_id = "assistandid"
 
         # Initialize a Thread for conversation
         st.session_state.thread = st.session_state.client.beta.threads.create()
